@@ -1,3 +1,9 @@
+use clap::Parser;
+
+pub mod config;
+
 fn main() {
-    println!("Hello, world!");
+    let cli = config::Cli::parse();
+
+    println!("asdasd: {:?}", cli.token);
 }
