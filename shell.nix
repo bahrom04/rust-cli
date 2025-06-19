@@ -1,5 +1,4 @@
 {pkgs ? import <nixpkgs> {}}:
-
 pkgs.stdenv.mkDerivation {
   name = "name";
   nativeBuildInputs = with pkgs; [
