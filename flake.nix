@@ -21,5 +21,8 @@
       devShells.default = import ./shell.nix {inherit pkgs;};
 
       packages.default = import ./. {inherit pkgs;};
-    });
+    })
+    // {
+      darwinModules.default = import ./modules.nix self;
+    };
 }
